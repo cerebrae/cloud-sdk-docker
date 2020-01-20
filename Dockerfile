@@ -38,6 +38,8 @@ RUN apt-get -qqy update && apt-get install -qqy \
     docker --version && kubectl version --client
 VOLUME ["/root/.config", "/root/.kube"]
 
+# Expose the Datastore port
+EXPOSE 8082
 
 
 # Set the default command to run when starting the container
