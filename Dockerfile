@@ -41,4 +41,4 @@ VOLUME ["/root/.config", "/root/.kube"]
 
 
 # Set the default command to run when starting the container
-CMD ["gcloud", "beta emulators datastore start", "--no-store-on-disk", "--project=coder-cr", "--host-port=0.0.0.0:8082"]
+CMD ["/bin/bash", "-c", "gcloud beta emulators datastore start   --no-store-on-disk   --project=coder-cr   --host-port 0.0.0.0:8082"]
