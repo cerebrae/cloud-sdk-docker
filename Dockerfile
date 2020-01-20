@@ -43,4 +43,4 @@ VOLUME ["/root/.config", "/root/.kube"]
 EXPOSE 8082
 
 # Set the default command to run when starting the container
-CMD ["gcloud beta emulators datastore start", "--no-store-on-disk", "--project=coder-cr", "--host-port=0.0.0.0:8082"]
+CMD ["gcloud beta emulators datastore", "start", "--no-store-on-disk", "--project=coder-cr", "--host-port=0.0.0.0:8082"]
