@@ -43,4 +43,4 @@ EXPOSE 8082
 
 
 # Set the default command to run when starting the container
-CMD ["/bin/bash", "-c", "gcloud beta emulators datastore start   --no-store-on-disk   --project=coder-cr   --host-port 0.0.0.0:8082"]
+CMD ["/bin/bash", "-c", "gcloud beta emulators datastore start   --no-store-on-disk    --host-port 0.0.0.0:8082"]
